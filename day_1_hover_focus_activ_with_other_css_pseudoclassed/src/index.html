@@ -5,24 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/day_1_hover_focus_activ_with_other_css_pseudoclassed/dist/output.css">
     <title>Day 1</title>
 </head>
 
-<body>
-    <div class="flex items-center space-x-14 my-20 mx-20">
+<body class="my-20 mx-20">
+    <div class="flex items-center space-x-14 ">
         <div class="">
             <p class="my-3">hover effect</p>
             <button class="p-3 text-slate-50 rounded-lg bg-sky-400 hover:bg-sky-500">Click Me</button>
         </div>
         <div>
             <p class="my-3">focus effect with hover</p>
-            <button class="p-3 rounded-full text-white bg-purple-400 hover:bg-purple-500 focus:ring focus:ring-violet-500">Save Changes</button>
+            <button
+                class="p-3 rounded-full text-white bg-purple-400 hover:bg-purple-500 focus:ring focus:ring-violet-500">Save
+                Changes</button>
         </div>
         <div>
             <p class="my-3">focus effect with hover active</p>
-            <button class="p-3 rounded-full text-white bg-purple-400 active:bg-violet-900 hover:bg-purple-500 focus:ring focus:ring-violet-500">Save Changes</button>
+            <button
+                class="p-3 rounded-full text-white bg-purple-400 active:bg-violet-900 hover:bg-purple-500 focus:ring focus:ring-violet-500">Save
+                Changes</button>
         </div>
+    </div>
+    <a href=""
+        class="group block max-w-sm mt-10 p-6 rounded-lg shadow-lg space-y-3 ring-1 ring-slate-900/5 bg-white hover:bg-sky-400 hover:ring-sky-500">
+        <div class="flex items-center space-x-3">
+            <p class="group-hover:text-white">1</p>
+            <p class="text-black text-sm font-semibold group-hover:text-white">New project</p>
+        </div>
+        <p class="text-sm text-slate-500 group-hover:text-white ">Create a new project from a variety of starting
+            templates.</p>
+    </a>
+    <p class="mt-5 mb-2">Form styling with sibling state</p>
+    <div class="max-w-sm">
+        <form>
+            <label class="block">
+                <span class="block text-sm font-medium text-slate-700">Email</span>
+                <input type="email" class="peer mt-1 block w-full px-3 py-2 invalid:border-pink-500 invalid:text-pink-600
+                focus:invalid:border-pink-500 focus:invalid:ring-pink-500 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+                focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" />
+                <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+                    Please provide a valid email address.
+                </p>
+            </label>
+        </form>
+        <p class="m-3">First line and first letter in tailwindcss </p>
+        <p class="max-w-sm first-line:uppercase first-line:tracking-widest
+        first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
+        first-letter:mr-3 first-letter:float-left">
+            Well, let me tell you something, funny boy. Y'know that little stamp, the one
+            that says "New York Public Library"? Well that may not mean anything to you,
+            but that means a lot to me. One whole hell of a lot.
+        </p>
     </div>
 </body>
 
